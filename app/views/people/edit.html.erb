@@ -1,0 +1,11 @@
+<%= form_for(@person) do |p| %>
+<p>Edit <%= @person.first_name %></p>
+
+  <div class="field">
+    <%= p.label :first_name %><br>
+    <%= p.text_field :first_name %>
+  </div>
+  <div class="actions">
+    <%= p.submit %>
+  </div>
+<% end %>
